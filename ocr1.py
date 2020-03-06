@@ -13,18 +13,6 @@ pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files (x86)\Tesseract-OCR\t
 img = cv2.resize(img, (428, 270), interpolation=cv2.INTER_CUBIC)
 img1 = cv2.imread('English.jpg',0)
 img = cv2.resize(img1, (428, 270), interpolation=cv2.INTER_CUBIC)
-
-
-
-
-
-
-
-
-
-
-
-
 code = pytesseract.image_to_string(img1,lang='eng')
 #print("檢驗過程 :" + code)
 #gray image
